@@ -1,47 +1,54 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"36 ./custom_pin.h
-[; ;./custom_pin.h: 36: typedef struct {
-[s S1214 `Vuc 1 `Vuc 1 `*Vuc 1 ]
-[n S1214 . mask pos port ]
-"34 ./TM1637Display.h
-[; ;./TM1637Display.h: 34: typedef struct {
-[s S1215 `uc 1 `S1214 1 `S1214 1 ]
-[n S1215 . animationRunning DIO CLK ]
-"11 TM1637Display.c
-[; ;TM1637Display.c: 11: void tm1637DisplayDecimalRaw(tm1637Pins_t *display, char *digitArr, int displaySeparator);
-[v _tm1637DisplayDecimalRaw `(v ~T0 @X0 0 ef3`*S1215`*uc`i ]
-"42 ./TM1637Display.h
-[; ;./TM1637Display.h: 42: void tm1637SetBrightness(tm1637Pins_t *display, char brightness);
-[v _tm1637SetBrightness `(v ~T0 @X0 0 ef2`*S1215`uc ]
-"520 ./mcc_generated_files/tmr4.h
-[; ;./mcc_generated_files/tmr4.h: 520: void TMR4_StopTimer(void);
-[v _TMR4_StopTimer `(v ~T0 @X0 0 ef ]
-[v F10043 `(v ~T0 @X0 0 tf ]
-"825
-[; ;./mcc_generated_files/tmr4.h: 825:  void TMR4_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _TMR4_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F10043 ]
-"456
-[; ;./mcc_generated_files/tmr4.h: 456: void TMR4_StartTimer(void);
-[v _TMR4_StartTimer `(v ~T0 @X0 0 ef ]
-"7 TM1637Display.c
-[; ;TM1637Display.c: 7: void _tm1637Start(tm1637Pins_t *display);
-[v __tm1637Start `(v ~T0 @X0 0 ef1`*S1215 ]
-"10
-[; ;TM1637Display.c: 10: void _tm1637WriteByte(tm1637Pins_t *display, unsigned char b);
-[v __tm1637WriteByte `(v ~T0 @X0 0 ef2`*S1215`uc ]
-"9
-[; ;TM1637Display.c: 9: void _tm1637ReadResult(tm1637Pins_t *display);
-[v __tm1637ReadResult `(v ~T0 @X0 0 ef1`*S1215 ]
-"8
-[; ;TM1637Display.c: 8: void _tm1637Stop(tm1637Pins_t *display);
-[v __tm1637Stop `(v ~T0 @X0 0 ef1`*S1215 ]
-"42 ./custom_pin.h
-[; ;./custom_pin.h: 42: void write_reg(tPin pin, uint8_t data);
-[v _write_reg `(v ~T0 @X0 0 ef2`S1214`uc ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
-[p i __delay ]
+"358 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 358:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"368
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 368:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"357
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 357: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"375
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 375: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+"3484
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3484: extern volatile unsigned char PMADRL __attribute__((address(0x191)));
+[v _PMADRL `Vuc ~T0 @X0 0 e@401 ]
+"3504
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3504: extern volatile unsigned char PMADRH __attribute__((address(0x192)));
+[v _PMADRH `Vuc ~T0 @X0 0 e@402 ]
+"3577
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3577:     struct {
+[s S184 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S184 . RD WR WREN WRERR FREE LWLO CFGS ]
+"3576
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3576: typedef union {
+[u S183 `S184 1 ]
+[n S183 . . ]
+"3587
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3587: extern volatile PMCON1bits_t PMCON1bits __attribute__((address(0x195)));
+[v _PMCON1bits `VS183 ~T0 @X0 0 e@405 ]
+"8 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"3551 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3551: extern volatile unsigned char PMDATH __attribute__((address(0x194)));
+[v _PMDATH `Vuc ~T0 @X0 0 e@404 ]
+"3531
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3531: extern volatile unsigned char PMDATL __attribute__((address(0x193)));
+[v _PMDATL `Vuc ~T0 @X0 0 e@403 ]
+"164 mcc_generated_files/memory.h
+[; ;mcc_generated_files/memory.h: 164: int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray);
+[v _FLASH_WriteBlock `(c ~T0 @X0 0 ef2`us`*us ]
+"189
+[; ;mcc_generated_files/memory.h: 189: void FLASH_EraseBlock(uint16_t startAddr);
+[v _FLASH_EraseBlock `(v ~T0 @X0 0 ef1`us ]
+"3627 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 3627: extern volatile unsigned char PMCON2 __attribute__((address(0x196)));
+[v _PMCON2 `Vuc ~T0 @X0 0 e@406 ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1368,494 +1375,296 @@ Version 4.0 HI-TECH Software Intermediate Code
 "27866
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1619.h: 27866: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"15 TM1637Display.c
-[; ;TM1637Display.c: 15: const char segmentMap[] = {
-[v _segmentMap `Cuc ~T0 @X0 -> 17 `i e ]
-[i _segmentMap
-:U ..
--> -> 63 `i `uc
--> -> 6 `i `uc
--> -> 91 `i `uc
--> -> 79 `i `uc
--> -> 102 `i `uc
--> -> 109 `i `uc
--> -> 125 `i `uc
--> -> 7 `i `uc
--> -> 127 `i `uc
--> -> 111 `i `uc
--> -> 119 `i `uc
--> -> 124 `i `uc
--> -> 57 `i `uc
--> -> 94 `i `uc
--> -> 121 `i `uc
--> -> 113 `i `uc
--> -> 0 `i `uc
-..
-]
-"20
-[; ;TM1637Display.c: 20: const uint32_t rotationMap[] = {
-[v _rotationMap `Cul ~T0 @X0 -> 12 `i e ]
-[i _rotationMap
-:U ..
--> -> -> 1 `i `l `ul
--> -> -> 256 `i `l `ul
--> -> 65536 `l `ul
--> -> 16777216 `l `ul
--> -> 536870912 `l `ul
--> -> 268435456 `l `ul
--> -> 134217728 `l `ul
--> -> 524288 `l `ul
--> -> -> 2048 `i `l `ul
--> -> -> 8 `i `l `ul
--> -> -> 4 `i `l `ul
--> -> -> 2 `i `l `ul
-..
-]
-"34
-[; ;TM1637Display.c: 34: const uint32_t rotationMapSize = sizeof(rotationMap) / sizeof(rotationMap[0]);
-[v _rotationMapSize `Cul ~T0 @X0 1 e ]
-[i _rotationMapSize
--> / -> # _rotationMap `ui -> # *U + &U _rotationMap * -> -> -> 0 `i `ui `ux -> -> # *U &U _rotationMap `ui `ux `ui `ul
-]
-"35
-[; ;TM1637Display.c: 35: static uint8_t rotationMapIdx = 0;
-[v _rotationMapIdx `uc ~T0 @X0 1 s ]
-[i _rotationMapIdx
--> -> 0 `i `uc
-]
-"36
-[; ;TM1637Display.c: 36: static tm1637Pins_t *displayHandle = 0;
-[v _displayHandle `*S1215 ~T0 @X0 1 s ]
-[i _displayHandle
--> -> 0 `i `*S1215
-]
-"37
-[; ;TM1637Display.c: 37: static uint8_t rotationAnimationStep = 0;
-[v _rotationAnimationStep `uc ~T0 @X0 1 s ]
-[i _rotationAnimationStep
--> -> 0 `i `uc
-]
-"39
-[; ;TM1637Display.c: 39: void display_animation_timer_isr(void) {
-[v _display_animation_timer_isr `(v ~T0 @X0 1 ef ]
+"58 mcc_generated_files/memory.c
+[; ;mcc_generated_files/memory.c: 58: uint16_t FLASH_ReadWord(uint16_t flashAddr)
+[v _FLASH_ReadWord `(us ~T0 @X0 1 ef1`us ]
+"59
+[; ;mcc_generated_files/memory.c: 59: {
 {
-[e :U _display_animation_timer_isr ]
-[f ]
-"40
-[; ;TM1637Display.c: 40:     char digitArr[4];
-[v _digitArr `uc ~T0 @X0 -> 4 `i a ]
-"41
-[; ;TM1637Display.c: 41:     *((uint32_t*)digitArr) = rotationMap[rotationMapIdx % rotationMapSize];
-[e = *U -> &U _digitArr `*ul *U + &U _rotationMap * -> % -> _rotationMapIdx `ul _rotationMapSize `ux -> -> # *U &U _rotationMap `ui `ux ]
-"42
-[; ;TM1637Display.c: 42:     tm1637DisplayDecimalRaw(displayHandle, digitArr, 0);
-[e ( _tm1637DisplayDecimalRaw (3 , , _displayHandle &U _digitArr -> 0 `i ]
-"43
-[; ;TM1637Display.c: 43:     rotationMapIdx += rotationAnimationStep;
-[e =+ _rotationMapIdx -> _rotationAnimationStep `uc ]
-"44
-[; ;TM1637Display.c: 44: }
-[e :UE 1221 ]
-}
-"46
-[; ;TM1637Display.c: 46: tm1637Pins_t * tm1637Init(tPin DIO, tPin CLK) {
-[v _tm1637Init `(*S1215 ~T0 @X0 1 ef2`S1214`S1214 ]
-{
-[e :U _tm1637Init ]
-[v _DIO `S1214 ~T0 @X0 1 r1 ]
-[v _CLK `S1214 ~T0 @X0 1 r2 ]
-[f ]
-"47
-[; ;TM1637Display.c: 47:     static tm1637Pins_t display;
-[v F10202 `S1215 ~T0 @X0 1 s display ]
-"48
-[; ;TM1637Display.c: 48:     display.DIO = DIO;
-[e = . F10202 1 _DIO ]
-"49
-[; ;TM1637Display.c: 49:     display.CLK = CLK;
-[e = . F10202 2 _CLK ]
-"50
-[; ;TM1637Display.c: 50:     display.animationRunning = 0;
-[e = . F10202 0 -> -> 0 `i `uc ]
-"52
-[; ;TM1637Display.c: 52:     tm1637SetBrightness(&display, 8);
-[e ( _tm1637SetBrightness (2 , &U F10202 -> -> 8 `i `uc ]
-"54
-[; ;TM1637Display.c: 54:     TMR4_StopTimer();
-[e ( _TMR4_StopTimer ..  ]
-"55
-[; ;TM1637Display.c: 55:     TMR4_SetInterruptHandler(display_animation_timer_isr);
-[e ( _TMR4_SetInterruptHandler (1 &U _display_animation_timer_isr ]
-"57
-[; ;TM1637Display.c: 57:     return &display;
-[e ) &U F10202 ]
-[e $UE 1222  ]
+[e :U _FLASH_ReadWord ]
 "58
-[; ;TM1637Display.c: 58: }
-[e :UE 1222 ]
-}
-"61
-[; ;TM1637Display.c: 61: void tm1637CycleAnimationStart(tm1637Pins_t *display, uint8_t dir) {
-[v _tm1637CycleAnimationStart `(v ~T0 @X0 1 ef2`*S1215`uc ]
-{
-[e :U _tm1637CycleAnimationStart ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[v _dir `uc ~T0 @X0 1 r2 ]
+[; ;mcc_generated_files/memory.c: 58: uint16_t FLASH_ReadWord(uint16_t flashAddr)
+[v _flashAddr `us ~T0 @X0 1 r1 ]
+"59
+[; ;mcc_generated_files/memory.c: 59: {
 [f ]
+"60
+[; ;mcc_generated_files/memory.c: 60:     uint8_t GIEBitValue = INTCONbits.GIE;
+[v _GIEBitValue `uc ~T0 @X0 1 a ]
+[e = _GIEBitValue . . _INTCONbits 0 7 ]
 "62
-[; ;TM1637Display.c: 62:     displayHandle = display;
-[e = _displayHandle _display ]
+[; ;mcc_generated_files/memory.c: 62:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
 "63
-[; ;TM1637Display.c: 63:     rotationAnimationStep = (dir) ? 1 : -1;
-[e = _rotationAnimationStep -> ? != -> _dir `i -> 0 `i : -> 1 `i -U -> 1 `i `uc ]
+[; ;mcc_generated_files/memory.c: 63:     PMADRL = (flashAddr & 0x00FF);
+[e = _PMADRL -> & -> _flashAddr `ui -> -> 255 `i `ui `uc ]
 "64
-[; ;TM1637Display.c: 64:     TMR4_StartTimer();
-[e ( _TMR4_StartTimer ..  ]
-"65
-[; ;TM1637Display.c: 65:     display->animationRunning = 1;
-[e = . *U _display 0 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/memory.c: 64:     PMADRH = ((flashAddr & 0xFF00) >> 8);
+[e = _PMADRH -> >> & -> _flashAddr `ui -> 65280 `ui -> 8 `i `uc ]
 "66
-[; ;TM1637Display.c: 66: }
-[e :UE 1223 ]
-}
+[; ;mcc_generated_files/memory.c: 66:     PMCON1bits.CFGS = 0;
+[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
+"67
+[; ;mcc_generated_files/memory.c: 67:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"68
+[; ;mcc_generated_files/memory.c: 68:     __nop();
+[e ( ___nop ..  ]
 "69
-[; ;TM1637Display.c: 69: void tm1637CycleAnimationStop(tm1637Pins_t *display) {
-[v _tm1637CycleAnimationStop `(v ~T0 @X0 1 ef1`*S1215 ]
-{
-[e :U _tm1637CycleAnimationStop ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[f ]
+[; ;mcc_generated_files/memory.c: 69:     __nop();
+[e ( ___nop ..  ]
 "70
-[; ;TM1637Display.c: 70:     TMR4_StopTimer();
-[e ( _TMR4_StopTimer ..  ]
-"71
-[; ;TM1637Display.c: 71:     display->animationRunning = 0;
-[e = . *U _display 0 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/memory.c: 70:     INTCONbits.GIE = GIEBitValue;
+[e = . . _INTCONbits 0 7 _GIEBitValue ]
 "72
-[; ;TM1637Display.c: 72: }
-[e :UE 1224 ]
+[; ;mcc_generated_files/memory.c: 72:     return ((uint16_t)((PMDATH << 8) | PMDATL));
+[e ) -> | << -> _PMDATH `i -> 8 `i -> _PMDATL `i `us ]
+[e $UE 1214  ]
+"73
+[; ;mcc_generated_files/memory.c: 73: }
+[e :UE 1214 ]
 }
 "75
-[; ;TM1637Display.c: 75: void tm1637DisplayDecimalRaw(tm1637Pins_t *display, char *digitArr, int displaySeparator) {
-[v _tm1637DisplayDecimalRaw `(v ~T0 @X0 1 ef3`*S1215`*uc`i ]
-{
-[e :U _tm1637DisplayDecimalRaw ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[v _digitArr `*uc ~T0 @X0 1 r2 ]
-[v _displaySeparator `i ~T0 @X0 1 r3 ]
-[f ]
+[; ;mcc_generated_files/memory.c: 75: void FLASH_WriteWord(uint16_t flashAddr, uint16_t *ramBuf, uint16_t word)
+[v _FLASH_WriteWord `(v ~T0 @X0 1 ef3`us`*us`us ]
 "76
-[; ;TM1637Display.c: 76:     _tm1637Start(display);
-[e ( __tm1637Start (1 _display ]
+[; ;mcc_generated_files/memory.c: 76: {
+{
+[e :U _FLASH_WriteWord ]
+"75
+[; ;mcc_generated_files/memory.c: 75: void FLASH_WriteWord(uint16_t flashAddr, uint16_t *ramBuf, uint16_t word)
+[v _flashAddr `us ~T0 @X0 1 r1 ]
+[v _ramBuf `*us ~T0 @X0 1 r2 ]
+[v _word `us ~T0 @X0 1 r3 ]
+"76
+[; ;mcc_generated_files/memory.c: 76: {
+[f ]
 "77
-[; ;TM1637Display.c: 77:     _tm1637WriteByte(display, 0x40);
-[e ( __tm1637WriteByte (2 , _display -> -> 64 `i `uc ]
+[; ;mcc_generated_files/memory.c: 77:     uint16_t blockStartAddr = (uint16_t)(flashAddr & ((0x2000 -1) ^ (32 -1)));
+[v _blockStartAddr `us ~T0 @X0 1 a ]
+[e = _blockStartAddr -> & -> _flashAddr `ui -> ^ - -> 8192 `i -> 1 `i - -> 32 `i -> 1 `i `ui `us ]
 "78
-[; ;TM1637Display.c: 78:     _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
+[; ;mcc_generated_files/memory.c: 78:     uint8_t offset = (uint8_t)(flashAddr & (32 -1));
+[v _offset `uc ~T0 @X0 1 a ]
+[e = _offset -> & -> _flashAddr `ui -> - -> 32 `i -> 1 `i `ui `uc ]
 "79
-[; ;TM1637Display.c: 79:     _tm1637Stop(display);
-[e ( __tm1637Stop (1 _display ]
-"81
-[; ;TM1637Display.c: 81:     _tm1637Start(display);
-[e ( __tm1637Start (1 _display ]
+[; ;mcc_generated_files/memory.c: 79:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
 "82
-[; ;TM1637Display.c: 82:     _tm1637WriteByte(display, 0xc0);
-[e ( __tm1637WriteByte (2 , _display -> -> 192 `i `uc ]
+[; ;mcc_generated_files/memory.c: 82:     for (i=0; i<32; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 32 `i 1216  ]
+[e $U 1217  ]
+[e :U 1216 ]
 "83
-[; ;TM1637Display.c: 83:     _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
+[; ;mcc_generated_files/memory.c: 83:     {
+{
+"84
+[; ;mcc_generated_files/memory.c: 84:         ramBuf[i] = FLASH_ReadWord((blockStartAddr+i));
+[e = *U + _ramBuf * -> _i `ux -> -> # *U _ramBuf `ui `ux ( _FLASH_ReadWord (1 -> + -> _blockStartAddr `ui -> _i `ui `us ]
 "85
-[; ;TM1637Display.c: 85:     for (int i = 0; i < 4; ++i) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 4 `i 1226  ]
-[e $U 1227  ]
-[e :U 1226 ]
-{
-"86
-[; ;TM1637Display.c: 86:         _tm1637WriteByte(display, digitArr[3 - i]);
-[e ( __tm1637WriteByte (2 , _display -> *U + _digitArr * -> - -> 3 `i _i `x -> -> # *U _digitArr `i `x `uc ]
-"87
-[; ;TM1637Display.c: 87:         _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
+[; ;mcc_generated_files/memory.c: 85:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 32 `i 1216  ]
+[e :U 1217 ]
+}
 "88
-[; ;TM1637Display.c: 88:     }
-}
-[e =+ _i -> 1 `i ]
-[e $ < _i -> 4 `i 1226  ]
-[e :U 1227 ]
-}
-"90
-[; ;TM1637Display.c: 90:     _tm1637Stop(display);
-[e ( __tm1637Stop (1 _display ]
+[; ;mcc_generated_files/memory.c: 88:     ramBuf[offset] = word;
+[e = *U + _ramBuf * -> _offset `ux -> -> # *U _ramBuf `ui `ux _word ]
 "91
-[; ;TM1637Display.c: 91: }
-[e :UE 1225 ]
+[; ;mcc_generated_files/memory.c: 91:     FLASH_WriteBlock(blockStartAddr, ramBuf);
+[e ( _FLASH_WriteBlock (2 , _blockStartAddr _ramBuf ]
+"92
+[; ;mcc_generated_files/memory.c: 92: }
+[e :UE 1215 ]
 }
+"94
+[; ;mcc_generated_files/memory.c: 94: int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray)
+[v _FLASH_WriteBlock `(c ~T0 @X0 1 ef2`us`*us ]
 "95
-[; ;TM1637Display.c: 95: void tm1637DisplayDecimal(tm1637Pins_t *display, int v, int displaySeparator) {
-[v _tm1637DisplayDecimal `(v ~T0 @X0 1 ef3`*S1215`i`i ]
+[; ;mcc_generated_files/memory.c: 95: {
 {
-[e :U _tm1637DisplayDecimal ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[v _v `i ~T0 @X0 1 r2 ]
-[v _displaySeparator `i ~T0 @X0 1 r3 ]
+[e :U _FLASH_WriteBlock ]
+"94
+[; ;mcc_generated_files/memory.c: 94: int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray)
+[v _writeAddr `us ~T0 @X0 1 r1 ]
+[v _flashWordArray `*us ~T0 @X0 1 r2 ]
+"95
+[; ;mcc_generated_files/memory.c: 95: {
 [f ]
 "96
-[; ;TM1637Display.c: 96:     unsigned char digitArr[4];
-[v _digitArr `uc ~T0 @X0 -> 4 `i a ]
+[; ;mcc_generated_files/memory.c: 96:     uint16_t blockStartAddr = (uint16_t )(writeAddr & ((0x2000 -1) ^ (32 -1)));
+[v _blockStartAddr `us ~T0 @X0 1 a ]
+[e = _blockStartAddr -> & -> _writeAddr `ui -> ^ - -> 8192 `i -> 1 `i - -> 32 `i -> 1 `i `ui `us ]
 "97
-[; ;TM1637Display.c: 97:     for (int i = 0; i < 4; ++i) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 4 `i 1230  ]
-[e $U 1231  ]
-[e :U 1230 ]
-{
+[; ;mcc_generated_files/memory.c: 97:     uint8_t GIEBitValue = INTCONbits.GIE;
+[v _GIEBitValue `uc ~T0 @X0 1 a ]
+[e = _GIEBitValue . . _INTCONbits 0 7 ]
 "98
-[; ;TM1637Display.c: 98:         digitArr[i] = segmentMap[v % 10];
-[e = *U + &U _digitArr * -> -> _i `ui `ux -> -> # *U &U _digitArr `ui `ux -> *U + &U _segmentMap * -> -> % _v -> 10 `i `ui `ux -> -> # *U &U _segmentMap `ui `ux `uc ]
-"99
-[; ;TM1637Display.c: 99:         if (i == 2 && displaySeparator) {
-[e $ ! && == _i -> 2 `i != _displaySeparator -> 0 `i 1233  ]
-{
-"100
-[; ;TM1637Display.c: 100:             digitArr[i] |= 1 << 7;
-[e =| *U + &U _digitArr * -> -> _i `ui `ux -> -> # *U &U _digitArr `ui `ux -> << -> 1 `i -> 7 `i `uc ]
+[; ;mcc_generated_files/memory.c: 98:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
 "101
-[; ;TM1637Display.c: 101:         }
-}
-[e :U 1233 ]
+[; ;mcc_generated_files/memory.c: 101:     if( writeAddr != blockStartAddr )
+[e $ ! != -> _writeAddr `ui -> _blockStartAddr `ui 1220  ]
 "102
-[; ;TM1637Display.c: 102:         v /= 10;
-[e =/ _v -> 10 `i ]
+[; ;mcc_generated_files/memory.c: 102:     {
+{
 "103
-[; ;TM1637Display.c: 103:     }
+[; ;mcc_generated_files/memory.c: 103:         return -1;
+[e ) -> -U -> 1 `i `c ]
+[e $UE 1219  ]
+"104
+[; ;mcc_generated_files/memory.c: 104:     }
 }
-[e =+ _i -> 1 `i ]
-[e $ < _i -> 4 `i 1230  ]
-[e :U 1231 ]
-}
-"105
-[; ;TM1637Display.c: 105:     _tm1637Start(display);
-[e ( __tm1637Start (1 _display ]
+[e :U 1220 ]
 "106
-[; ;TM1637Display.c: 106:     _tm1637WriteByte(display, 0x40);
-[e ( __tm1637WriteByte (2 , _display -> -> 64 `i `uc ]
-"107
-[; ;TM1637Display.c: 107:     _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
-"108
-[; ;TM1637Display.c: 108:     _tm1637Stop(display);
-[e ( __tm1637Stop (1 _display ]
-"110
-[; ;TM1637Display.c: 110:     _tm1637Start(display);
-[e ( __tm1637Start (1 _display ]
-"111
-[; ;TM1637Display.c: 111:     _tm1637WriteByte(display, 0xc0);
-[e ( __tm1637WriteByte (2 , _display -> -> 192 `i `uc ]
+[; ;mcc_generated_files/memory.c: 106:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"109
+[; ;mcc_generated_files/memory.c: 109:     FLASH_EraseBlock(writeAddr);
+[e ( _FLASH_EraseBlock (1 _writeAddr ]
 "112
-[; ;TM1637Display.c: 112:     _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
+[; ;mcc_generated_files/memory.c: 112:     PMCON1bits.CFGS = 0;
+[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
+"113
+[; ;mcc_generated_files/memory.c: 113:     PMCON1bits.WREN = 1;
+[e = . . _PMCON1bits 0 2 -> -> 1 `i `uc ]
 "114
-[; ;TM1637Display.c: 114:     for (int i = 0; i < 4; ++i) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 4 `i 1234  ]
-[e $U 1235  ]
-[e :U 1234 ]
-{
-"115
-[; ;TM1637Display.c: 115:         _tm1637WriteByte(display, digitArr[3 - i]);
-[e ( __tm1637WriteByte (2 , _display *U + &U _digitArr * -> -> - -> 3 `i _i `ui `ux -> -> # *U &U _digitArr `ui `ux ]
+[; ;mcc_generated_files/memory.c: 114:     PMCON1bits.LWLO = 1;
+[e = . . _PMCON1bits 0 5 -> -> 1 `i `uc ]
 "116
-[; ;TM1637Display.c: 116:         _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
+[; ;mcc_generated_files/memory.c: 116:     for (i=0; i<32; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 32 `i 1221  ]
+[e $U 1222  ]
+[e :U 1221 ]
 "117
-[; ;TM1637Display.c: 117:     }
-}
-[e =+ _i -> 1 `i ]
-[e $ < _i -> 4 `i 1234  ]
-[e :U 1235 ]
-}
+[; ;mcc_generated_files/memory.c: 117:     {
+{
 "119
-[; ;TM1637Display.c: 119:     _tm1637Stop(display);
-[e ( __tm1637Stop (1 _display ]
-"120
-[; ;TM1637Display.c: 120: }
-[e :UE 1229 ]
-}
+[; ;mcc_generated_files/memory.c: 119:         PMADRL = (writeAddr & 0xFF);
+[e = _PMADRL -> & -> _writeAddr `ui -> -> 255 `i `ui `uc ]
+"121
+[; ;mcc_generated_files/memory.c: 121:         PMADRH = ((writeAddr & 0xFF00) >> 8);
+[e = _PMADRH -> >> & -> _writeAddr `ui -> 65280 `ui -> 8 `i `uc ]
 "124
-[; ;TM1637Display.c: 124: void tm1637SetBrightness(tm1637Pins_t *display, char brightness) {
-[v _tm1637SetBrightness `(v ~T0 @X0 1 ef2`*S1215`uc ]
+[; ;mcc_generated_files/memory.c: 124:         PMDATL = flashWordArray[i];
+[e = _PMDATL -> *U + _flashWordArray * -> _i `ux -> -> # *U _flashWordArray `ui `ux `uc ]
+"125
+[; ;mcc_generated_files/memory.c: 125:         PMDATH = ((flashWordArray[i] & 0xFF00) >> 8);
+[e = _PMDATH -> >> & -> *U + _flashWordArray * -> _i `ux -> -> # *U _flashWordArray `ui `ux `ui -> 65280 `ui -> 8 `i `uc ]
+"127
+[; ;mcc_generated_files/memory.c: 127:         if(i == (32 -1))
+[e $ ! == -> _i `i - -> 32 `i -> 1 `i 1224  ]
+"128
+[; ;mcc_generated_files/memory.c: 128:         {
 {
-[e :U _tm1637SetBrightness ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[v _brightness `uc ~T0 @X0 1 r2 ]
-[f ]
 "130
-[; ;TM1637Display.c: 130:     _tm1637Start(display);
-[e ( __tm1637Start (1 _display ]
+[; ;mcc_generated_files/memory.c: 130:             PMCON1bits.LWLO = 0;
+[e = . . _PMCON1bits 0 5 -> -> 0 `i `uc ]
 "131
-[; ;TM1637Display.c: 131:     _tm1637WriteByte(display, 0x87 + brightness);
-[e ( __tm1637WriteByte (2 , _display -> + -> 135 `i -> _brightness `i `uc ]
-"132
-[; ;TM1637Display.c: 132:     _tm1637ReadResult(display);
-[e ( __tm1637ReadResult (1 _display ]
+[; ;mcc_generated_files/memory.c: 131:         }
+}
+[e :U 1224 ]
 "133
-[; ;TM1637Display.c: 133:     _tm1637Stop(display);
-[e ( __tm1637Stop (1 _display ]
+[; ;mcc_generated_files/memory.c: 133:         PMCON2 = 0x55;
+[e = _PMCON2 -> -> 85 `i `uc ]
 "134
-[; ;TM1637Display.c: 134: }
-[e :UE 1237 ]
-}
+[; ;mcc_generated_files/memory.c: 134:         PMCON2 = 0xAA;
+[e = _PMCON2 -> -> 170 `i `uc ]
+"135
+[; ;mcc_generated_files/memory.c: 135:         PMCON1bits.WR = 1;
+[e = . . _PMCON1bits 0 1 -> -> 1 `i `uc ]
 "136
-[; ;TM1637Display.c: 136: void _tm1637Start(tm1637Pins_t *display) {
-[v __tm1637Start `(v ~T0 @X0 1 ef1`*S1215 ]
-{
-[e :U __tm1637Start ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[f ]
+[; ;mcc_generated_files/memory.c: 136:         __nop();
+[e ( ___nop ..  ]
 "137
-[; ;TM1637Display.c: 137:     write_reg(display->CLK, 1);
-[e ( _write_reg (2 , . *U _display 2 -> -> 1 `i `uc ]
-"138
-[; ;TM1637Display.c: 138:     write_reg(display->DIO, 1);
-[e ( _write_reg (2 , . *U _display 1 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/memory.c: 137:         __nop();
+[e ( ___nop ..  ]
 "139
-[; ;TM1637Display.c: 139:     _delay((unsigned long)((2)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+[; ;mcc_generated_files/memory.c: 139:      writeAddr++;
+[e ++ _writeAddr -> -> 1 `i `us ]
 "140
-[; ;TM1637Display.c: 140:     write_reg(display->DIO, 0);
-[e ( _write_reg (2 , . *U _display 1 -> -> 0 `i `uc ]
-"141
-[; ;TM1637Display.c: 141: }
-[e :UE 1238 ]
+[; ;mcc_generated_files/memory.c: 140:     }
 }
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 32 `i 1221  ]
+[e :U 1222 ]
+}
+"142
+[; ;mcc_generated_files/memory.c: 142:     PMCON1bits.WREN = 0;
+[e = . . _PMCON1bits 0 2 -> -> 0 `i `uc ]
 "143
-[; ;TM1637Display.c: 143: void _tm1637Stop(tm1637Pins_t *display) {
-[v __tm1637Stop `(v ~T0 @X0 1 ef1`*S1215 ]
-{
-[e :U __tm1637Stop ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[f ]
-"144
-[; ;TM1637Display.c: 144:     write_reg(display->CLK, 0);
-[e ( _write_reg (2 , . *U _display 2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/memory.c: 143:     INTCONbits.GIE = GIEBitValue;
+[e = . . _INTCONbits 0 7 _GIEBitValue ]
 "145
-[; ;TM1637Display.c: 145:     _delay((unsigned long)((2)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+[; ;mcc_generated_files/memory.c: 145:     return 0;
+[e ) -> -> 0 `i `c ]
+[e $UE 1219  ]
 "146
-[; ;TM1637Display.c: 146:     write_reg(display->DIO, 0);
-[e ( _write_reg (2 , . *U _display 1 -> -> 0 `i `uc ]
-"147
-[; ;TM1637Display.c: 147:     _delay((unsigned long)((2)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+[; ;mcc_generated_files/memory.c: 146: }
+[e :UE 1219 ]
+}
 "148
-[; ;TM1637Display.c: 148:     write_reg(display->CLK, 1);
-[e ( _write_reg (2 , . *U _display 2 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/memory.c: 148: void FLASH_EraseBlock(uint16_t startAddr)
+[v _FLASH_EraseBlock `(v ~T0 @X0 1 ef1`us ]
 "149
-[; ;TM1637Display.c: 149:     _delay((unsigned long)((2)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+[; ;mcc_generated_files/memory.c: 149: {
+{
+[e :U _FLASH_EraseBlock ]
+"148
+[; ;mcc_generated_files/memory.c: 148: void FLASH_EraseBlock(uint16_t startAddr)
+[v _startAddr `us ~T0 @X0 1 r1 ]
+"149
+[; ;mcc_generated_files/memory.c: 149: {
+[f ]
 "150
-[; ;TM1637Display.c: 150:     write_reg(display->DIO, 1);
-[e ( _write_reg (2 , . *U _display 1 -> -> 1 `i `uc ]
-"151
-[; ;TM1637Display.c: 151: }
-[e :UE 1239 ]
-}
+[; ;mcc_generated_files/memory.c: 150:     uint8_t GIEBitValue = INTCONbits.GIE;
+[v _GIEBitValue `uc ~T0 @X0 1 a ]
+[e = _GIEBitValue . . _INTCONbits 0 7 ]
 "153
-[; ;TM1637Display.c: 153: void _tm1637ReadResult(tm1637Pins_t *display) {
-[v __tm1637ReadResult `(v ~T0 @X0 1 ef1`*S1215 ]
-{
-[e :U __tm1637ReadResult ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[f ]
-"154
-[; ;TM1637Display.c: 154:     write_reg(display->CLK, 0);
-[e ( _write_reg (2 , . *U _display 2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/memory.c: 153:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
 "155
-[; ;TM1637Display.c: 155:     _delay((unsigned long)((5)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+[; ;mcc_generated_files/memory.c: 155:     PMADRL = (startAddr & 0xFF);
+[e = _PMADRL -> & -> _startAddr `ui -> -> 255 `i `ui `uc ]
 "157
-[; ;TM1637Display.c: 157:     write_reg(display->CLK, 1);
-[e ( _write_reg (2 , . *U _display 2 -> -> 1 `i `uc ]
-"158
-[; ;TM1637Display.c: 158:     _delay((unsigned long)((2)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"159
-[; ;TM1637Display.c: 159:     write_reg(display->CLK, 0);
-[e ( _write_reg (2 , . *U _display 2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/memory.c: 157:     PMADRH = ((startAddr & 0xFF00) >> 8);
+[e = _PMADRH -> >> & -> _startAddr `ui -> 65280 `ui -> 8 `i `uc ]
 "160
-[; ;TM1637Display.c: 160: }
-[e :UE 1240 ]
-}
+[; ;mcc_generated_files/memory.c: 160:     PMCON1bits.CFGS = 0;
+[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
+"161
+[; ;mcc_generated_files/memory.c: 161:     PMCON1bits.FREE = 1;
+[e = . . _PMCON1bits 0 4 -> -> 1 `i `uc ]
 "162
-[; ;TM1637Display.c: 162: void _tm1637WriteByte(tm1637Pins_t *display, unsigned char b) {
-[v __tm1637WriteByte `(v ~T0 @X0 1 ef2`*S1215`uc ]
-{
-[e :U __tm1637WriteByte ]
-[v _display `*S1215 ~T0 @X0 1 r1 ]
-[v _b `uc ~T0 @X0 1 r2 ]
-[f ]
-"163
-[; ;TM1637Display.c: 163:     for (int i = 0; i < 8; ++i) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 1242  ]
-[e $U 1243  ]
-[e :U 1242 ]
-{
-"164
-[; ;TM1637Display.c: 164:         write_reg(display->CLK, 0);
-[e ( _write_reg (2 , . *U _display 2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/memory.c: 162:     PMCON1bits.WREN = 1;
+[e = . . _PMCON1bits 0 2 -> -> 1 `i `uc ]
 "165
-[; ;TM1637Display.c: 165:         if (b & 0x01) {
-[e $ ! != & -> _b `i -> 1 `i -> 0 `i 1245  ]
-{
+[; ;mcc_generated_files/memory.c: 165:     PMCON2 = 0x55;
+[e = _PMCON2 -> -> 85 `i `uc ]
 "166
-[; ;TM1637Display.c: 166:             write_reg(display->DIO, 1);
-[e ( _write_reg (2 , . *U _display 1 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/memory.c: 166:     PMCON2 = 0xAA;
+[e = _PMCON2 -> -> 170 `i `uc ]
 "167
-[; ;TM1637Display.c: 167:         }
-}
-[e $U 1246  ]
+[; ;mcc_generated_files/memory.c: 167:     PMCON1bits.WR = 1;
+[e = . . _PMCON1bits 0 1 -> -> 1 `i `uc ]
 "168
-[; ;TM1637Display.c: 168:         else {
-[e :U 1245 ]
-{
+[; ;mcc_generated_files/memory.c: 168:     __nop();
+[e ( ___nop ..  ]
 "169
-[; ;TM1637Display.c: 169:             write_reg(display->DIO, 0);
-[e ( _write_reg (2 , . *U _display 1 -> -> 0 `i `uc ]
-"170
-[; ;TM1637Display.c: 170:         }
-}
-[e :U 1246 ]
+[; ;mcc_generated_files/memory.c: 169:     __nop();
+[e ( ___nop ..  ]
 "171
-[; ;TM1637Display.c: 171:         _delay((unsigned long)((3)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 3 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+[; ;mcc_generated_files/memory.c: 171:     PMCON1bits.WREN = 0;
+[e = . . _PMCON1bits 0 2 -> -> 0 `i `uc ]
 "172
-[; ;TM1637Display.c: 172:         b >>= 1;
-[e =>> _b -> -> 1 `i `uc ]
+[; ;mcc_generated_files/memory.c: 172:     INTCONbits.GIE = GIEBitValue;
+[e = . . _INTCONbits 0 7 _GIEBitValue ]
 "173
-[; ;TM1637Display.c: 173:         write_reg(display->CLK, 1);
-[e ( _write_reg (2 , . *U _display 2 -> -> 1 `i `uc ]
-"174
-[; ;TM1637Display.c: 174:         _delay((unsigned long)((3)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 3 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"175
-[; ;TM1637Display.c: 175:     }
-}
-[e =+ _i -> 1 `i ]
-[e $ < _i -> 8 `i 1242  ]
-[e :U 1243 ]
-}
-"176
-[; ;TM1637Display.c: 176: }
-[e :UE 1241 ]
+[; ;mcc_generated_files/memory.c: 173: }
+[e :UE 1225 ]
 }

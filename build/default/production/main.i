@@ -17044,9 +17044,9 @@ void tm1637CycleAnimationStop(tm1637Pins_t *display);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 265 "./mcc_generated_files/pin_manager.h"
+# 305 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 277 "./mcc_generated_files/pin_manager.h"
+# 317 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -17210,13 +17210,6 @@ char *tempnam(const char *, const char *);
 
 # 1 "./mcc_generated_files/interrupt_manager.h" 1
 # 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pwm3.h" 1
-# 102 "./mcc_generated_files/pwm3.h"
- void PWM3_Initialize(void);
-# 129 "./mcc_generated_files/pwm3.h"
- void PWM3_LoadDutyValue(uint16_t dutyValue);
-# 56 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr4.h" 1
 # 79 "./mcc_generated_files/tmr4.h"
@@ -17426,7 +17419,7 @@ void TMR4_ISR(void);
 extern void (*TMR4_InterruptHandler)(void);
 # 861 "./mcc_generated_files/tmr4.h"
 void TMR4_DefaultInterruptHandler(void);
-# 57 "./mcc_generated_files/mcc.h" 2
+# 56 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr2.h" 1
 # 79 "./mcc_generated_files/tmr2.h"
@@ -17628,14 +17621,32 @@ void TMR2_Period8BitSet(uint8_t periodVal);
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
 # 809 "./mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 58 "./mcc_generated_files/mcc.h" 2
+# 57 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pwm4.h" 1
 # 102 "./mcc_generated_files/pwm4.h"
  void PWM4_Initialize(void);
 # 129 "./mcc_generated_files/pwm4.h"
  void PWM4_LoadDutyValue(uint16_t dutyValue);
+# 58 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/pwm3.h" 1
+# 102 "./mcc_generated_files/pwm3.h"
+ void PWM3_Initialize(void);
+# 129 "./mcc_generated_files/pwm3.h"
+ void PWM3_LoadDutyValue(uint16_t dutyValue);
 # 59 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/memory.h" 1
+# 99 "./mcc_generated_files/memory.h"
+uint16_t FLASH_ReadWord(uint16_t flashAddr);
+# 128 "./mcc_generated_files/memory.h"
+void FLASH_WriteWord(uint16_t flashAddr, uint16_t *ramBuf, uint16_t word);
+# 164 "./mcc_generated_files/memory.h"
+int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray);
+# 189 "./mcc_generated_files/memory.h"
+void FLASH_EraseBlock(uint16_t startAddr);
+# 60 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/adc.h" 1
 # 72 "./mcc_generated_files/adc.h"
@@ -17671,7 +17682,7 @@ adc_result_t ADC_GetConversionResult(void);
 adc_result_t ADC_GetConversion(adc_channel_t channel);
 # 316 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 60 "./mcc_generated_files/mcc.h" 2
+# 61 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/eusart.h" 1
 # 76 "./mcc_generated_files/eusart.h"
@@ -17704,20 +17715,20 @@ void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 398 "./mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 61 "./mcc_generated_files/mcc.h" 2
-# 76 "./mcc_generated_files/mcc.h"
+# 62 "./mcc_generated_files/mcc.h" 2
+# 77 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 89 "./mcc_generated_files/mcc.h"
+# 90 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 5 "main.c" 2
-# 16 "main.c"
+# 25 "main.c"
 uint16_t duty_cycle(uint16_t percent);
 void ramp_motor(void (*speed_controller_A)(), void (*speed_controller_B)(), uint8_t dir, uint16_t start_speed, uint16_t end_speed, uint16_t ms);
 
-uint16_t duty_cycle(uint16_t percent) { return (uint16_t)((1023 * percent) / 100); }
-# 29 "main.c"
+uint16_t duty_cycle(uint16_t percent) { return (uint16_t)(((uint32_t)1023 * percent) / 100); }
+# 38 "main.c"
 void ramp_motor(void (*speed_controller_A)(), void (*speed_controller_B)(), uint8_t dir, uint16_t start_speed, uint16_t end_speed, uint16_t ms) {
-    int16_t step_sz = (duty_cycle(end_speed) - duty_cycle(start_speed)) / (ms / 50);
+    int32_t step_sz = ((int32_t)duty_cycle(end_speed) - (int32_t)duty_cycle(start_speed)) / (ms / 50);
     int16_t curr_speed = duty_cycle(start_speed);
 
     void (*speed_controller)() = dir ? speed_controller_A : speed_controller_B;
@@ -17741,10 +17752,8 @@ void main(void) {
     PWM3_LoadDutyValue(duty_cycle(0));
     PWM4_LoadDutyValue(duty_cycle(0));
     do { LATCbits.LATC5 = 0; } while(0);
-    do { LATCbits.LATC0 = 0; } while(0);
-    do { LATCbits.LATC1 = 0; } while(0);
     do { LATAbits.LATA2 = 0; } while(0);
-    do { LATAbits.LATA5 = 0; } while(0);
+    do { LATAbits.LATA5 = 1; } while(0);
 
     tm1637Pins_t *display = tm1637Init(
         (tPin){0x4, 0x2, &PORTA},
@@ -17759,36 +17768,55 @@ void main(void) {
     (INTCONbits.GIE = 1);
     (INTCONbits.PEIE = 1);
 
+    uint8_t last_dir = 0;
+
     while (1) {
         _delay((unsigned long)((100)*(32000000/4000.0)));
         adc_conv = ADC_GetConversion(channel_AN0);
         uint16_t adc_v = (uint16_t)((((float)adc_conv * 5)/1023) * 100);
-        uint8_t dir = (adc_v > 300) ? 0 : 1;
-
-
 
 
 
 
         if (adc_v > 390 && !display->animationRunning) {
             tm1637CycleAnimationStart(display, 1);
-        } else if (adc_v < 110 && !display->animationRunning) {
-            tm1637CycleAnimationStart(display, 0);
-        } else if (display->animationRunning && (adc_v > 100 && adc_v < 380)){
-            tm1637DisplayDecimal(display, 0000, 1);
-            tm1637CycleAnimationStop(display);
-        }
-        if (!PORTCbits.RC4) {
-# 100 "main.c"
+            last_dir = 0;
             ramp_motor(
                 &PWM3_LoadDutyValue,
                 &PWM4_LoadDutyValue,
                 0,
                 0,
-                70,
-                2000
+                100,
+                250
             );
-            tm1637CycleAnimationStart(display, dir);
+        } else if (adc_v < 110 && !display->animationRunning) {
+            tm1637CycleAnimationStart(display, 0);
+            last_dir = 1;
+            ramp_motor(
+                &PWM3_LoadDutyValue,
+                &PWM4_LoadDutyValue,
+                1,
+                0,
+                100,
+                250
+            );
+        } else if (display->animationRunning && (adc_v > 100 && adc_v < 380)){
+            tm1637DisplayDecimal(display, FLASH_ReadWord((uint16_t)0x1F80), 0);
+            tm1637CycleAnimationStop(display);
+            ramp_motor(
+                &PWM3_LoadDutyValue,
+                &PWM4_LoadDutyValue,
+                last_dir,
+                100,
+                0,
+                500
+            );
+        }
+
+        if (!PORTCbits.RC4) {
+            uint16_t writeData = 123;
+            uint16_t Buf[32];
+            FLASH_WriteWord((uint16_t)0x1F80, Buf, writeData);
         }
     }
 }

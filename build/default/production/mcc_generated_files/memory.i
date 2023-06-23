@@ -1,4 +1,4 @@
-# 1 "TM1637Display.c"
+# 1 "mcc_generated_files/memory.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,115 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "TM1637Display.c" 2
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
-
-
-
-
-typedef short int16_t;
-
-
-
-
-typedef __int24 int24_t;
-
-
-
-
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
-
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
-# 1 "TM1637Display.c" 2
-
+# 1 "mcc_generated_files/memory.c" 2
+# 51 "mcc_generated_files/memory.c"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -128,7 +21,17 @@ extern double __fpnormalize(double);
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdlib.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdlib.h" 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdlib.h" 2 3
+
+
+
+
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\features.h" 1 3
 # 10 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdlib.h" 3
@@ -137,6 +40,10 @@ extern double __fpnormalize(double);
 typedef long int wchar_t;
 # 122 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdlib.h" 2 3
 
 
@@ -211,7 +118,92 @@ extern void __builtin_software_breakpoint(void);
 
 
 
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
 
+
+
+
+typedef short int16_t;
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
+# 5 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\builtins.h" 2 3
 
 
 #pragma intrinsic(__nop)
@@ -17010,886 +17002,140 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\xc.h" 2 3
-# 2 "TM1637Display.c" 2
+# 51 "mcc_generated_files/memory.c" 2
 
-# 1 "./custom_pin.h" 1
-# 36 "./custom_pin.h"
-typedef struct {
-    volatile uint8_t mask;
-    volatile uint8_t pos;
-    volatile uint8_t *port;
-} tPin;
-
-void write_reg(tPin pin, uint8_t data);
-# 3 "TM1637Display.c" 2
-
-# 1 "./TM1637Display.h" 1
-# 34 "./TM1637Display.h"
-typedef struct {
-    uint8_t animationRunning;
-    tPin DIO;
-    tPin CLK;
-} tm1637Pins_t;
-
-tm1637Pins_t * tm1637Init(tPin DIO, tPin CLK);
-void tm1637DisplayDecimal(tm1637Pins_t *display, int v, int displaySeparator);
-void tm1637SetBrightness(tm1637Pins_t *display, char brightness);
-void tm1637CycleAnimationStart(tm1637Pins_t *display, uint8_t dir);
-void tm1637CycleAnimationStop(tm1637Pins_t *display);
-# 4 "TM1637Display.c" 2
-
-# 1 "./mcc_generated_files/mcc.h" 1
-# 50 "./mcc_generated_files/mcc.h"
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 305 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 317 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
-
+# 1 "mcc_generated_files/memory.h" 1
+# 54 "mcc_generated_files/memory.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 1 3
-
-
-
-
-
-typedef void * va_list[1];
-
-
-
-
-typedef void * __isoc_va_list[1];
-# 137 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long ssize_t;
-# 246 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 399 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
-
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
-
-
-
-
-
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
-
-int remove(const char *);
-int rename(const char *, const char *);
-
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
-
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
-
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
-
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
-
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
-int ungetc(int, FILE *);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
-
-
-
-
-
-
-
-char *tempnam(const char *, const char *);
-# 7 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\conio.h" 2 3
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr4.h" 1
-# 79 "./mcc_generated_files/tmr4.h"
-typedef enum
-{
-# 89 "./mcc_generated_files/tmr4.h"
-   TMR4_ROP_STARTS_TMRON,
-
-
-
-
-   TMR4_ROP_STARTS_TMRON_ERSHIGH,
-
-
-
-
-   TMR4_ROP_STARTS_TMRON_ERSLOW,
-
-
-
-
-   TMR4_ROP_RESETS_ERSBOTHEDGE,
-
-
-
-
-   TMR4_ROP_RESETS_ERSRISINGEDGE,
-
-
-
-
-   TMR4_ROP_RESETS_ERSFALLINGEDGE,
-
-
-
-
-   TMR4_ROP_RESETS_ERSLOW,
-
-
-
-
-   TMR4_ROP_RESETS_ERSHIGH,
-# 135 "./mcc_generated_files/tmr4.h"
-   TMR4_OS_STARTS_TMRON,
-
-
-
-
-   TMR4_OS_STARTS_ERSRISINGEDGE ,
-
-
-
-
-   TMR4_OS_STARTS_ERSFALLINGEDGE ,
-
-
-
-
-   TMR4_OS_STARTS_ERSBOTHEDGE,
-
-
-
-
-
-   TMR4_OS_STARTS_ERSFIRSTRISINGEDGE,
-
-
-
-
-
-   TMR4_OS_STARTS_ERSFIRSTFALLINGEDGE,
-
-
-
-
-
-   TMR4_OS_STARTS_ERSRISINGEDGEDETECT,
-
-
-
-
-   TMR4_OS_STARTS_ERSFALLINGEDGEDETECT,
-
-
-
-
-   TMR4_OS_STARTS_TMRON_ERSHIGH = 0x16,
-
-
-
-
-   TMR4_OS_STARTS_TMRON_ERSLOW = 0x17,
-# 192 "./mcc_generated_files/tmr4.h"
-   TMR4_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
-
-
-
-
-   TMR4_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
-
-
-
-
-
-   TMR4_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
-
-} TMR4_HLT_MODE;
-# 220 "./mcc_generated_files/tmr4.h"
-typedef enum
-{
-
-
-
-    TMR4_T4IN,
-
-
-
-    TMR4_C1_OUT_SYNC,
-
-
-
-    TMR4_C2_OUT_SYNC,
-
-
-
-    TMR4_CCP1_OUT,
-
-
-
-    TMR4_CCP2_OUT,
-
-
-
-    TMR4_T2POSTSCALED,
-
-
-
-    TMR4_RESERVED,
-
-
-
-    TMR4_T6POSTSCALED,
-
-
-
-    TMR4_ZCD1_OUTPUT,
-
-
-
-    TMR4_CLC1_OUT,
-
-
-
-    TMR4_CLC2_OUT,
-
-
-
-    TMR4_CLC3_OUT,
-
-
-
-    TMR4_CLC4_OUT,
-
-
-
-    TMR4_PWM3_OUT,
-
-
-
-    TMR4_PWM4_OUT
-
-
-} TMR4_HLT_EXT_RESET_SOURCE;
-# 327 "./mcc_generated_files/tmr4.h"
-void TMR4_Initialize(void);
-# 363 "./mcc_generated_files/tmr4.h"
-void TMR4_ModeSet(TMR4_HLT_MODE mode);
-# 398 "./mcc_generated_files/tmr4.h"
-void TMR4_ExtResetSourceSet(TMR4_HLT_EXT_RESET_SOURCE reset);
-# 427 "./mcc_generated_files/tmr4.h"
-void TMR4_Start(void);
-# 456 "./mcc_generated_files/tmr4.h"
-void TMR4_StartTimer(void);
-# 488 "./mcc_generated_files/tmr4.h"
-void TMR4_Stop(void);
-# 520 "./mcc_generated_files/tmr4.h"
-void TMR4_StopTimer(void);
-# 555 "./mcc_generated_files/tmr4.h"
-uint8_t TMR4_Counter8BitGet(void);
-# 590 "./mcc_generated_files/tmr4.h"
-uint8_t TMR4_ReadTimer(void);
-# 629 "./mcc_generated_files/tmr4.h"
-void TMR4_Counter8BitSet(uint8_t timerVal);
-# 668 "./mcc_generated_files/tmr4.h"
-void TMR4_WriteTimer(uint8_t timerVal);
-# 720 "./mcc_generated_files/tmr4.h"
-void TMR4_Period8BitSet(uint8_t periodVal);
-# 772 "./mcc_generated_files/tmr4.h"
-void TMR4_LoadPeriodRegister(uint8_t periodVal);
-# 790 "./mcc_generated_files/tmr4.h"
-void TMR4_ISR(void);
-# 808 "./mcc_generated_files/tmr4.h"
- void TMR4_CallBack(void);
-# 825 "./mcc_generated_files/tmr4.h"
- void TMR4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 843 "./mcc_generated_files/tmr4.h"
-extern void (*TMR4_InterruptHandler)(void);
-# 861 "./mcc_generated_files/tmr4.h"
-void TMR4_DefaultInterruptHandler(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr2.h" 1
-# 79 "./mcc_generated_files/tmr2.h"
-typedef enum
-{
-# 89 "./mcc_generated_files/tmr2.h"
-   TMR2_ROP_STARTS_TMRON,
-
-
-
-
-   TMR2_ROP_STARTS_TMRON_ERSHIGH,
-
-
-
-
-   TMR2_ROP_STARTS_TMRON_ERSLOW,
-
-
-
-
-   TMR2_ROP_RESETS_ERSBOTHEDGE,
-
-
-
-
-   TMR2_ROP_RESETS_ERSRISINGEDGE,
-
-
-
-
-   TMR2_ROP_RESETS_ERSFALLINGEDGE,
-
-
-
-
-   TMR2_ROP_RESETS_ERSLOW,
-
-
-
-
-   TMR2_ROP_RESETS_ERSHIGH,
-# 135 "./mcc_generated_files/tmr2.h"
-   TMR2_OS_STARTS_TMRON,
-
-
-
-
-   TMR2_OS_STARTS_ERSRISINGEDGE ,
-
-
-
-
-   TMR2_OS_STARTS_ERSFALLINGEDGE ,
-
-
-
-
-   TMR2_OS_STARTS_ERSBOTHEDGE,
-
-
-
-
-
-   TMR2_OS_STARTS_ERSFIRSTRISINGEDGE,
-
-
-
-
-
-   TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE,
-
-
-
-
-
-   TMR2_OS_STARTS_ERSRISINGEDGEDETECT,
-
-
-
-
-   TMR2_OS_STARTS_ERSFALLINGEDGEDETECT,
-
-
-
-
-   TMR2_OS_STARTS_TMRON_ERSHIGH = 0x16,
-
-
-
-
-   TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
-# 192 "./mcc_generated_files/tmr2.h"
-   TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
-
-
-
-
-   TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
-
-
-
-
-
-   TMR2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
-
-} TMR2_HLT_MODE;
-# 220 "./mcc_generated_files/tmr2.h"
-typedef enum
-{
-
-
-
-    TMR2_T2IN,
-
-
-
-    TMR2_C1_OUT_SYNC,
-
-
-
-    TMR2_C2_OUT_SYNC,
-
-
-
-    TMR2_CCP1_OUT,
-
-
-
-    TMR2_CCP2_OUT,
-
-
-
-    TMR2_RESERVED,
-
-
-
-    TMR2_T4POSTSCALED,
-
-
-
-    TMR2_T6POSTSCALED,
-
-
-
-    TMR2_ZCD1_OUTPUT,
-
-
-
-    TMR2_CLC1_OUT,
-
-
-
-    TMR2_CLC2_OUT,
-
-
-
-    TMR2_CLC3_OUT,
-
-
-
-    TMR2_CLC4_OUT,
-
-
-
-    TMR2_PWM3_OUT,
-
-
-
-    TMR2_PWM4_OUT
-
-
-} TMR2_HLT_EXT_RESET_SOURCE;
-# 326 "./mcc_generated_files/tmr2.h"
-void TMR2_Initialize(void);
-# 362 "./mcc_generated_files/tmr2.h"
-void TMR2_ModeSet(TMR2_HLT_MODE mode);
-# 397 "./mcc_generated_files/tmr2.h"
-void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
-# 426 "./mcc_generated_files/tmr2.h"
-void TMR2_Start(void);
-# 455 "./mcc_generated_files/tmr2.h"
-void TMR2_StartTimer(void);
-# 487 "./mcc_generated_files/tmr2.h"
-void TMR2_Stop(void);
-# 519 "./mcc_generated_files/tmr2.h"
-void TMR2_StopTimer(void);
-# 554 "./mcc_generated_files/tmr2.h"
-uint8_t TMR2_Counter8BitGet(void);
-# 589 "./mcc_generated_files/tmr2.h"
-uint8_t TMR2_ReadTimer(void);
-# 628 "./mcc_generated_files/tmr2.h"
-void TMR2_Counter8BitSet(uint8_t timerVal);
-# 667 "./mcc_generated_files/tmr2.h"
-void TMR2_WriteTimer(uint8_t timerVal);
-# 719 "./mcc_generated_files/tmr2.h"
-void TMR2_Period8BitSet(uint8_t periodVal);
-# 771 "./mcc_generated_files/tmr2.h"
-void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 809 "./mcc_generated_files/tmr2.h"
-_Bool TMR2_HasOverflowOccured(void);
-# 57 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pwm4.h" 1
-# 102 "./mcc_generated_files/pwm4.h"
- void PWM4_Initialize(void);
-# 129 "./mcc_generated_files/pwm4.h"
- void PWM4_LoadDutyValue(uint16_t dutyValue);
-# 58 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pwm3.h" 1
-# 102 "./mcc_generated_files/pwm3.h"
- void PWM3_Initialize(void);
-# 129 "./mcc_generated_files/pwm3.h"
- void PWM3_LoadDutyValue(uint16_t dutyValue);
-# 59 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/memory.h" 1
-# 99 "./mcc_generated_files/memory.h"
+# 54 "mcc_generated_files/memory.h" 2
+# 99 "mcc_generated_files/memory.h"
 uint16_t FLASH_ReadWord(uint16_t flashAddr);
-# 128 "./mcc_generated_files/memory.h"
+# 128 "mcc_generated_files/memory.h"
 void FLASH_WriteWord(uint16_t flashAddr, uint16_t *ramBuf, uint16_t word);
-# 164 "./mcc_generated_files/memory.h"
+# 164 "mcc_generated_files/memory.h"
 int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray);
-# 189 "./mcc_generated_files/memory.h"
+# 189 "mcc_generated_files/memory.h"
 void FLASH_EraseBlock(uint16_t startAddr);
-# 60 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/adc.h" 1
-# 72 "./mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
+# 52 "mcc_generated_files/memory.c" 2
 
 
 
 
-typedef struct
+
+
+uint16_t FLASH_ReadWord(uint16_t flashAddr)
 {
-    adc_result_t adcResult1;
-    adc_result_t adcResult2;
-} adc_sync_double_result_t;
-# 95 "./mcc_generated_files/adc.h"
-typedef enum
+    uint8_t GIEBitValue = INTCONbits.GIE;
+
+    INTCONbits.GIE = 0;
+    PMADRL = (flashAddr & 0x00FF);
+    PMADRH = ((flashAddr & 0xFF00) >> 8);
+
+    PMCON1bits.CFGS = 0;
+    PMCON1bits.RD = 1;
+    __nop();
+    __nop();
+    INTCONbits.GIE = GIEBitValue;
+
+    return ((uint16_t)((PMDATH << 8) | PMDATL));
+}
+
+void FLASH_WriteWord(uint16_t flashAddr, uint16_t *ramBuf, uint16_t word)
 {
-    channel_AN0 = 0x0,
-    channel_Temp = 0x1D,
-    channel_DAC = 0x1E,
-    channel_FVR = 0x1F
-} adc_channel_t;
-# 136 "./mcc_generated_files/adc.h"
-void ADC_Initialize(void);
-# 166 "./mcc_generated_files/adc.h"
-void ADC_SelectChannel(adc_channel_t channel);
-# 193 "./mcc_generated_files/adc.h"
-void ADC_StartConversion(void);
-# 225 "./mcc_generated_files/adc.h"
-_Bool ADC_IsConversionDone(void);
-# 258 "./mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversionResult(void);
-# 288 "./mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 316 "./mcc_generated_files/adc.h"
-void ADC_TemperatureAcquisitionDelay(void);
-# 61 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/eusart.h" 1
-# 76 "./mcc_generated_files/eusart.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart_status_t;
-# 111 "./mcc_generated_files/eusart.h"
-void EUSART_Initialize(void);
-# 159 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_ready(void);
-# 207 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_rx_ready(void);
-# 254 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_done(void);
-# 302 "./mcc_generated_files/eusart.h"
-eusart_status_t EUSART_get_last_status(void);
-# 322 "./mcc_generated_files/eusart.h"
-uint8_t EUSART_Read(void);
-# 342 "./mcc_generated_files/eusart.h"
-void EUSART_Write(uint8_t txData);
-# 362 "./mcc_generated_files/eusart.h"
-void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 380 "./mcc_generated_files/eusart.h"
-void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 398 "./mcc_generated_files/eusart.h"
-void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 62 "./mcc_generated_files/mcc.h" 2
-# 77 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 90 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 5 "TM1637Display.c" 2
+    uint16_t blockStartAddr = (uint16_t)(flashAddr & ((0x2000 -1) ^ (32 -1)));
+    uint8_t offset = (uint8_t)(flashAddr & (32 -1));
+    uint8_t i;
 
 
-void _tm1637Start(tm1637Pins_t *display);
-void _tm1637Stop(tm1637Pins_t *display);
-void _tm1637ReadResult(tm1637Pins_t *display);
-void _tm1637WriteByte(tm1637Pins_t *display, unsigned char b);
-void tm1637DisplayDecimalRaw(tm1637Pins_t *display, char *digitArr, int displaySeparator);
-
-void display_animation_timer_isr(void);
-
-const char segmentMap[] = {
-    0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07,
-    0x7f, 0x6f, 0x77, 0x7c, 0x39, 0x5e, 0x79, 0x71,
-    0x00
-};
-const uint32_t rotationMap[] = {
-    0x00000001,
-    0x00000100,
-    0x00010000,
-    0x01000000,
-    0x20000000,
-    0x10000000,
-    0x08000000,
-    0x00080000,
-    0x00000800,
-    0x00000008,
-    0x00000004,
-    0x00000002,
-};
-const uint32_t rotationMapSize = sizeof(rotationMap) / sizeof(rotationMap[0]);
-static uint8_t rotationMapIdx = 0;
-static tm1637Pins_t *displayHandle = 0;
-static uint8_t rotationAnimationStep = 0;
-
-void display_animation_timer_isr(void) {
-    char digitArr[4];
-    *((uint32_t*)digitArr) = rotationMap[rotationMapIdx % rotationMapSize];
-    tm1637DisplayDecimalRaw(displayHandle, digitArr, 0);
-    rotationMapIdx += rotationAnimationStep;
-}
-
-tm1637Pins_t * tm1637Init(tPin DIO, tPin CLK) {
-    static tm1637Pins_t display;
-    display.DIO = DIO;
-    display.CLK = CLK;
-    display.animationRunning = 0;
-
-    tm1637SetBrightness(&display, 8);
-
-    TMR4_StopTimer();
-    TMR4_SetInterruptHandler(display_animation_timer_isr);
-
-    return &display;
-}
-
-
-void tm1637CycleAnimationStart(tm1637Pins_t *display, uint8_t dir) {
-    displayHandle = display;
-    rotationAnimationStep = (dir) ? 1 : -1;
-    TMR4_StartTimer();
-    display->animationRunning = 1;
-}
-
-
-void tm1637CycleAnimationStop(tm1637Pins_t *display) {
-    TMR4_StopTimer();
-    display->animationRunning = 0;
-}
-
-
-void tm1637DisplayDecimalRaw(tm1637Pins_t *display, char *digitArr, int displaySeparator) {
-    _tm1637Start(display);
-    _tm1637WriteByte(display, 0x40);
-    _tm1637ReadResult(display);
-    _tm1637Stop(display);
-
-    _tm1637Start(display);
-    _tm1637WriteByte(display, 0xc0);
-    _tm1637ReadResult(display);
-
-    for (int i = 0; i < 4; ++i) {
-        _tm1637WriteByte(display, digitArr[3 - i]);
-        _tm1637ReadResult(display);
+    for (i=0; i<32; i++)
+    {
+        ramBuf[i] = FLASH_ReadWord((blockStartAddr+i));
     }
 
-    _tm1637Stop(display);
+
+    ramBuf[offset] = word;
+
+
+    FLASH_WriteBlock(blockStartAddr, ramBuf);
 }
 
+int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray)
+{
+    uint16_t blockStartAddr = (uint16_t )(writeAddr & ((0x2000 -1) ^ (32 -1)));
+    uint8_t GIEBitValue = INTCONbits.GIE;
+    uint8_t i;
 
 
-void tm1637DisplayDecimal(tm1637Pins_t *display, int v, int displaySeparator) {
-    unsigned char digitArr[4];
-    for (int i = 0; i < 4; ++i) {
-        digitArr[i] = segmentMap[v % 10];
-        if (i == 2 && displaySeparator) {
-            digitArr[i] |= 1 << 7;
+    if( writeAddr != blockStartAddr )
+    {
+        return -1;
+    }
+
+    INTCONbits.GIE = 0;
+
+
+    FLASH_EraseBlock(writeAddr);
+
+
+    PMCON1bits.CFGS = 0;
+    PMCON1bits.WREN = 1;
+    PMCON1bits.LWLO = 1;
+
+    for (i=0; i<32; i++)
+    {
+
+        PMADRL = (writeAddr & 0xFF);
+
+        PMADRH = ((writeAddr & 0xFF00) >> 8);
+
+
+        PMDATL = flashWordArray[i];
+        PMDATH = ((flashWordArray[i] & 0xFF00) >> 8);
+
+        if(i == (32 -1))
+        {
+
+            PMCON1bits.LWLO = 0;
         }
-        v /= 10;
+
+        PMCON2 = 0x55;
+        PMCON2 = 0xAA;
+        PMCON1bits.WR = 1;
+        __nop();
+        __nop();
+
+     writeAddr++;
     }
 
-    _tm1637Start(display);
-    _tm1637WriteByte(display, 0x40);
-    _tm1637ReadResult(display);
-    _tm1637Stop(display);
+    PMCON1bits.WREN = 0;
+    INTCONbits.GIE = GIEBitValue;
 
-    _tm1637Start(display);
-    _tm1637WriteByte(display, 0xc0);
-    _tm1637ReadResult(display);
-
-    for (int i = 0; i < 4; ++i) {
-        _tm1637WriteByte(display, digitArr[3 - i]);
-        _tm1637ReadResult(display);
-    }
-
-    _tm1637Stop(display);
+    return 0;
 }
 
+void FLASH_EraseBlock(uint16_t startAddr)
+{
+    uint8_t GIEBitValue = INTCONbits.GIE;
 
 
-void tm1637SetBrightness(tm1637Pins_t *display, char brightness) {
+    INTCONbits.GIE = 0;
+
+    PMADRL = (startAddr & 0xFF);
+
+    PMADRH = ((startAddr & 0xFF00) >> 8);
 
 
+    PMCON1bits.CFGS = 0;
+    PMCON1bits.FREE = 1;
+    PMCON1bits.WREN = 1;
 
 
+    PMCON2 = 0x55;
+    PMCON2 = 0xAA;
+    PMCON1bits.WR = 1;
+    __nop();
+    __nop();
 
-    _tm1637Start(display);
-    _tm1637WriteByte(display, 0x87 + brightness);
-    _tm1637ReadResult(display);
-    _tm1637Stop(display);
-}
-
-void _tm1637Start(tm1637Pins_t *display) {
-    write_reg(display->CLK, 1);
-    write_reg(display->DIO, 1);
-    _delay((unsigned long)((2)*(32000000/4000000.0)));
-    write_reg(display->DIO, 0);
-}
-
-void _tm1637Stop(tm1637Pins_t *display) {
-    write_reg(display->CLK, 0);
-    _delay((unsigned long)((2)*(32000000/4000000.0)));
-    write_reg(display->DIO, 0);
-    _delay((unsigned long)((2)*(32000000/4000000.0)));
-    write_reg(display->CLK, 1);
-    _delay((unsigned long)((2)*(32000000/4000000.0)));
-    write_reg(display->DIO, 1);
-}
-
-void _tm1637ReadResult(tm1637Pins_t *display) {
-    write_reg(display->CLK, 0);
-    _delay((unsigned long)((5)*(32000000/4000000.0)));
-
-    write_reg(display->CLK, 1);
-    _delay((unsigned long)((2)*(32000000/4000000.0)));
-    write_reg(display->CLK, 0);
-}
-
-void _tm1637WriteByte(tm1637Pins_t *display, unsigned char b) {
-    for (int i = 0; i < 8; ++i) {
-        write_reg(display->CLK, 0);
-        if (b & 0x01) {
-            write_reg(display->DIO, 1);
-        }
-        else {
-            write_reg(display->DIO, 0);
-        }
-        _delay((unsigned long)((3)*(32000000/4000000.0)));
-        b >>= 1;
-        write_reg(display->CLK, 1);
-        _delay((unsigned long)((3)*(32000000/4000000.0)));
-    }
+    PMCON1bits.WREN = 0;
+    INTCONbits.GIE = GIEBitValue;
 }
